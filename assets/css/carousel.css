@@ -5,29 +5,12 @@
       width: 100px;
       padding-left: 5%;
   }
-
-  @media(max-width: 1600px) {
-    .masterWrapper i {
-        position: absolute;
-        padding-top: 45%;
-        height: 70%;
-        width: 50px;
-        padding-left: 5%;
-    }
-    .masterWrapper i:nth-child(1) {
-        left: 15px;
-    }
-    .masterWrapper i:nth-child(2) {
-        right: 15px;
-    }
-  }
-
   .masterWrapper i:nth-child(1) {
       left: 5px;
   }
   .masterWrapper i:nth-child(2) {
-      right: 5px;
-      padding-left: 5%;
+      right: 35px;
+      padding-left: 15%;
   }
   .masterWrapper i:hover {
     cursor: pointer;
@@ -35,7 +18,6 @@
   .masterPhoto > img {
     width: 300px;
     min-height: 450px;
-
   }
   .courseNav {
     position: absolute;
@@ -71,9 +53,9 @@
   }
   .carouselWrapper {
     display: none;
-    flex-wrap: nowrap;
     align-items: center;
     min-height: 80vh;
+    flex-wrap: wrap;
   }
   .courseNav > ul {
     list-style: none;
@@ -97,5 +79,102 @@
     }
     to {
       opacity: 1;
+    }
+  }
+
+  @media(max-width: 1600px) {
+    .masterWrapper i {
+        position: absolute;
+        padding-top: 45%;
+        height: 70%;
+        width: 50px;
+        padding-left: 0;
+    }
+    .masterWrapper i:nth-child(1) {
+        left: 15px;
+    }
+    .masterWrapper i:nth-child(2) {
+        right: 45px;
+    }
+  }
+  @media(max-width: 1000px) {
+    .masterWrapper i {
+      display: none;
+    }
+    .masterPhoto > img {
+      width: 200px;
+      min-height: 0;
+    }
+    .masterWrapper h2 {
+      font-size: 1.4em;
+    }
+    .masterPhoto a:before {
+      content: " ";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+    }
+    .carouselWrapper p {
+      font-size: 0.8em;
+    }
+  }
+  @media(max-width: 700px) {
+    .masterWrapper i {
+      position: absolute;
+      padding-top: 45%;
+      height: 70%;
+      width: 100px;
+      display: block;
+  }
+
+  .masterWrapper i:nth-child(1) {
+      left: 5px;
+  }
+  .masterWrapper i:nth-child(2) {
+      right: 5px;
+  }
+    .masterWrapper {
+      width: 100%;
+    }
+    .courseWrapper {
+      width: 100%;
+    }
+    .masterPhoto > img {
+      margin: 0 50px;
+      width: 300px;
+      min-height: 0;
+    }
+    .masterPhoto a:before {
+      content: " ";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+    }
+    .carouselWrapper p {
+      font-size: 0.8em;
+    }
+    .courseNav {
+      right: 0;
+    }
+    .courseNav ul {
+      margin-top: 10px;
+      display: inherit;
+    }
+    .courseNav ul > li {
+      margin-left: 10px;
+    }
+    .courseNav {
+      flex-direction: row;
+      justify-content: center;
+      height: 0;
+      width: 100%;
+      z-index: 99;
+    }
+  }
+  @media(max-width: 450px) {
+    .masterWrapper i {
+      display: none;
     }
   }
