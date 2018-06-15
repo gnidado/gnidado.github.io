@@ -1,0 +1,101 @@
+  .masterWrapper i {
+      position: absolute;
+      padding-top: 45%;
+      height: 70%;
+      width: 100px;
+      padding-left: 5%;
+  }
+
+  @media(max-width: 1600px) {
+    .masterWrapper i {
+        position: absolute;
+        padding-top: 45%;
+        height: 70%;
+        width: 50px;
+        padding-left: 5%;
+    }
+    .masterWrapper i:nth-child(1) {
+        left: 15px;
+    }
+    .masterWrapper i:nth-child(2) {
+        right: 15px;
+    }
+  }
+
+  .masterWrapper i:nth-child(1) {
+      left: 5px;
+  }
+  .masterWrapper i:nth-child(2) {
+      right: 5px;
+      padding-left: 5%;
+  }
+  .masterWrapper i:hover {
+    cursor: pointer;
+  }
+  .masterPhoto > img {
+    width: 300px;
+    min-height: 450px;
+
+  }
+  .courseNav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    right: 30px;
+    z-index: 99;
+  }
+  .masterWrapper {
+    display: none;
+    width: 40%;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .courseWrapper{
+      width: 60%;
+  }
+  .masterInfo {
+    margin: 20px 0;
+    padding-right: 20px;
+  }
+  .masterInfo p {
+    font-size: 16px;
+  }
+  #masters {
+    overflow: hidden;
+    background-image: url(../../images/courses/sport.jpg);
+    box-shadow: inset 0 1500px 0 rgba(0, 0, 0, 0.8);
+    background-size: cover;
+  }
+  .carouselWrapper {
+    display: none;
+    flex-wrap: nowrap;
+    align-items: center;
+    min-height: 80vh;
+  }
+  .courseNav > ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .courseNav li {
+    padding-left: 0;
+    margin-bottom: 4em;
+  }
+  .courseNav a {
+    border-bottom: none;
+  }
+  .active {
+    display: flex;
+    animation: fadeIn 1s ease-in 1;
+  }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
